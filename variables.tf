@@ -6,7 +6,7 @@ variable "region" {
 
 variable "name" {
   type        = string
-  default     = "demoland"
+  default     = "demo"
   description = "This will be a common named used for labeling most resources"
 }
 
