@@ -32,11 +32,11 @@ output "management_key" {
 }
 
 output "ssh_sg" {
-  value = aws_security_group.ssh.id
+  value = aws_security_group.allow_ssh.id
 }
 
 output "vault_acm_cert" {
-  value = aws_security_group.ssh.id
+  value = aws_security_group.allow_ssh.id
 }
 
 output "consul_secrets_manager_arn" {
