@@ -36,7 +36,7 @@ resource "aws_security_group" "allow_ssh" {
 }
 resource "aws_vpc_security_group_ingress_rule" "allow_ssh" {
   security_group_id = aws_security_group.allow_ssh.id
-  cidr_ipv4         = module.vpc.default_vpc_cidr_block
+  cidr_ipv4         = "${var.cidr_prefix}.0.0/${var.vpc_mask}"
   from_port         = 22
   ip_protocol       = "tcp"
   to_port           = 22

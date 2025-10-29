@@ -35,5 +35,5 @@ variable "my_ip" {
 
 variable "domain_name" {
   description = "The Domain name that is being managed"
-  default     = "daniel-fedick.sbx.hashidemos.io"
+  default     = "eden-tesfay.sbx.hashidemos.io"
 }
